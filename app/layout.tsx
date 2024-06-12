@@ -29,7 +29,10 @@ export default function RootLayout({
         }
       `}
       </Script>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <template data-qa-compass-template=""></template>
+      </body>
     </html>
   );
 }
